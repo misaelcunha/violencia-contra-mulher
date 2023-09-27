@@ -27,15 +27,17 @@ Para executar este projeto em sua máquina local, siga estas etapas:
 4. Ative o ambiente virtual:
 
    No Windows:
+   
    venv\Scripts\activate
    
-  No macOS e Linux:
-  source venv/bin/activate
+   No macOS e Linux:
+   
+   source venv/bin/activate
 
-5. Instale as dependências do projeto:
+6. Instale as dependências do projeto:
    pip install -r requirements.txt
 
-6. Inicie a aplicação:
+7. Inicie a aplicação:
    python app.py
 
 A aplicação estará disponível em http://127.0.0.1:5000/ no seu navegador.
