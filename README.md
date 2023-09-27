@@ -25,6 +25,7 @@ Para executar este projeto em sua máquina local, siga estas etapas:
    python -m venv venv
    
 4. Ative o ambiente virtual:
+
    No Windows:
    venv\Scripts\activate
    
