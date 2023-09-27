@@ -1,0 +1,158 @@
+{% extends "template.html"%}
+{% block conteudo %}
+
+    <div class="container text-center">
+        <h1 class="display-4">Análise dos Dados</h1>
+        <p class="lead text-justify">Abaixo, apresentamos gráficos que demonstram de forma clara e objetiva a situação dos crimes de ameaça, feminicídio, importunação sexual, estupro 
+          e lesão corporal durante os anos de 2022 e 2023, sendo importante destacar que os dados de 2023 foram coletados até julho.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/ameaca_consumado.jpg') }}" alt="Imagem 1" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/ameaca_tentado.jpg') }}" alt="Imagem 2" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/estupro_consumado.jpg') }}" alt="Imagem 3" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/estupro_tentado.jpg') }}" alt="Imagem 4" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/feminicidio_consumado.jpg') }}" alt="Imagem 5" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/feminicidio_tentado.jpg') }}" alt="Imagem 6" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/lesao_corporal_consumado.jpg') }}" alt="Imagem 7" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/lesao_corporal_tentado.jpg') }}" alt="Imagem 8" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/import_sexual_consumado.jpg') }}" alt="Imagem 9" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <h2 class="text-center">Cidades com mais casos de Feminicídio</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/cidades_consumados2022.jpg') }}" alt="Imagem 10" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/cidades_tentados2022.jpg') }}" alt="Imagem 11" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/cidades_consumados2023.jpg') }}" alt="Imagem 12" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='graficos/cidades_tentados2023.jpg') }}" alt="Imagem 13" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-justify">
+      <h3 class="text-center">Análise e Insights</h3>
+      <p class="lead">Ao examinarmos os dados detalhados sobre a violência contra mulheres nos anos de 2022 e os dados parciais de 2023 (até julho), podemos identificar insights valiosos que podem orientar ações preventivas e de apoio.
+         Essas descobertas são cruciais para compreender tendências e traçar estratégias eficazes.</p>
+        
+      <h3 class="text-center mt-4">Vítimas Consumados 2022 vs 2023</h3>
+      <ul class="lead">
+        <li>Ameaça e Lesão Corporal: Observamos uma redução significativa no número de vítimas de ameaça até julho de 2023, indicando uma tendência promissora. 
+          No entanto, a lesão corporal ainda representa uma parcela substancial de casos, exigindo medidas contínuas.
+        </li>
+        <li>
+          Estupro e Feminicídio: Os números de estupro e feminicídio permanecem relativamente estáveis em comparação com 2022. 
+          Isso reforça a necessidade contínua de medidas rigorosas de prevenção e apoio.
+        </li>
+        <li>
+          Importunação Sexual: A quantidade de vítimas de importunação sexual diminuiu até julho de 2023, refletindo a eficácia das medidas de conscientização e apoio.
+        </li>
+        <li>
+          Belo Horizonte: Em 2022, Belo Horizonte registrou 14 casos de feminicídio consumado, mas houve uma queda significativa em 2023, com 8 casos até julho. 
+          Essa redução pode ser resultado de medidas de conscientização e de combate à violência contra a mulher na capital.
+        </li>
+        <li>
+          Betim: Betim também apresentou uma diminuição nos casos, passando de 5 em 2022 para 4 em 2023. 
+          Embora a queda seja modesta, é um sinal positivo de que esforços podem estar surtindo efeito.
+        </li>
+        <li>
+          Patos de Minas, Cachoeira de Pajeú, Juiz de Fora, Para de Minas, Brumadinho, e Teófilo Otoni: Essas cidades tiveram um número significativo de casos de feminicídio em 2022, variando de 3 a 4 casos. 
+          No entanto, é essencial que essas comunidades continuem a investir em estratégias de prevenção e conscientização para reduzir esses números alarmantes.
+        </li>
+        <li>
+          Contagem e Paracatu: Embora Contagem tenha reduzido os casos de feminicídio consumado de 2022 para 2023, 
+          Paracatu viu um aumento de 0 para 4 casos. Essa discrepância sugere a necessidade de um foco adicional nas áreas com aumento de casos.
+        </li>
+      </ul>
+
+      <h3 class="text-center mt-4">Vítimas Tentados 2022 vs 2023</h3>
+      <ul class="lead">
+        <li>
+          Ameaça e Feminicídio: Embora o número de vítimas tentadas de ameaça tenha diminuído até julho de 2023, os casos de feminicídio tentado aumentaram. 
+          Isso destaca a importância de intervenções específicas para prevenir esse tipo de violência.
+        </li>
+        <li>
+          Estupro e Lesão Corporal: Os números permanecem relativamente constantes, enfatizando a necessidade contínua de educação e apoio.
+        </li>
+        <li>
+          Belo Horizonte: A capital lidera tanto em casos consumados quanto em tentados. Em 2022, foram registradas 26 vítimas de feminicídio tentado, e em 2023, houve uma queda para 15 casos até julho. 
+          Isso pode indicar a eficácia de programas de prevenção e assistência.
+        </li>
+        <li>
+          Contagem e Betim: Essas cidades também têm um número significativo de casos de feminicídio tentado. 
+          Enquanto Contagem manteve um número relativamente estável de casos, Betim viu uma pequena redução de 5 para 4 casos de 2022 para 2023.
+        </li>
+        <li>
+          Juiz de Fora: A cidade registrou 5 casos de feminicídio tentado em 2022 e reduziu para 4 em 2023. Embora a queda seja modesta, é um passo na direção certa.
+        </li>
+        <li>
+          Outras cidades: Várias outras cidades, como Ribeirão das Neves, Uberlândia, Santa Luzia, Sete Lagoas, Uba, Governador Valadares, Ibirite, Pitangui e Araguari, também
+           enfrentam desafios com casos de feminicídio tentado. A conscientização e o acesso a serviços de apoio devem ser ampliados nessas áreas.
+        </li>
+      </ul>
+
+      <h3 class="text-center mt-4">Análise Preditiva</h3>
+      <p class="lead">
+        Com base nos dados disponíveis até julho de 2023, é possível realizar uma análise preditiva. 
+        No entanto, é importante lembrar que essas previsões são sensíveis a mudanças nas circunstâncias e nas medidas de prevenção. Algumas considerações:
+      </p>
+      <ul class="lead">
+        <li>
+          Ameaça e Importunação Sexual: A tendência de declínio pode continuar, mas a eficácia das campanhas de conscientização deve ser monitorada.
+        </li>
+        <li>
+          Feminicídio: O aumento de casos tentados pode indicar um risco persistente. Intervenções específicas são cruciais para evitar tragédias.
+        </li>
+        <li>
+          Estupro e Lesão Corporal: Manter esses números sob controle requer educação contínua e apoio às vítimas.
+        </li>
+      </ul>
+
+      <h3 class="text-center mt-4">Conclusão</h3>
+      <p class="lead">É importante observar que a luta contra a violência de gênero requer esforços contínuos de conscientização, educação e políticas públicas.
+         A análise desses dados é um primeiro passo crucial para identificar áreas que necessitam de atenção e alocar recursos de maneira eficaz. 
+         O combate ao feminicídio é responsabilidade de toda a sociedade, e a colaboração entre governos, organizações da sociedade civil e indivíduos é fundamental para 
+         reduzir esses números alarmantes e criar um ambiente mais seguro para todas as mulheres em Minas Gerais.</p>
+    </div>
+{% endblock %}
