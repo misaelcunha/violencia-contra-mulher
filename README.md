@@ -6,6 +6,10 @@ Este é um projeto de análise de dados que se concentra em examinar e visualiza
 - Python 3.10.5
 - Flask 2.3.3
 - Werkzeug 2.3.7
+- Pandas 1.5.2
+- HTML 5
+- CSS
+- Bootstrap 4.1.3
 
 ## Descrição
 
