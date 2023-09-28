@@ -16,7 +16,7 @@ Este projeto tem como objetivo analisar dados públicos relacionados à violênc
 Para executar este projeto em sua máquina local, siga estas etapas:
 
 1. Clone o repositório:
-   git clone https://github.com/seu-usuario/análise-violencia-mulher.git
+   git clone https://github.com/misaelcunha/violencia-contra-mulher.git
 
 2. Navegue até o diretório do projeto:
    cd análise-violencia-mulher
